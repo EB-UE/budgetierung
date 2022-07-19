@@ -6,6 +6,8 @@
 
 <script>
 import { store } from "@/components/store";
+const deutschesZahlenformat=new Intl.NumberFormat('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+
 export default {
   methods: {
     downloadAsCSV() {
@@ -14,7 +16,7 @@ export default {
         ...store.antworten.map((item) => [
           `"${item.titel}"`,
           `"${item.antwort}"`,
-          `"${item.kosten}"`,
+          `"${deutschesZahlenformat.format(item.kosten)}"`,
         ]),
       ]
         .map((e) => e.join(","))
