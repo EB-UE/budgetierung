@@ -22,7 +22,7 @@ export default {
           `"${deutschesZahlenformat.format(item.kosten)}"`,
         ]),
       ]
-        .map((e) => e.join(","))
+        .map((e) => e.join(";"))
         .join("\n");
       this.$downloadjs(csvString, "Kosten.csv", "text/csv");
     },
