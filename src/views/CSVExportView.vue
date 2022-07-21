@@ -15,8 +15,10 @@ export default {
   methods: {
     downloadAsCSV() {
       const csvString = [
-        ['"Frage"', '"Antwort"', '"Kosten"'],
+        ['"Kostenart"', '"Unterkostenart"', '"Frage"', '"Antwort"', '"Kosten"'],
         ...store.antworten.map((item) => [
+          '"Sachkosten"',
+          '"Datenverarbeitung und IT"',
           `"${item.titel}"`,
           `"${item.antwort}"`,
           `"${deutschesZahlenformat.format(item.kosten)}"`,
