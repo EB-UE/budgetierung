@@ -1,18 +1,21 @@
 <template>
   <v-btn @click="downloadAsCSV">
-    Budgetierung als CSV-Datei herunterladen</v-btn
-  >
+    Budgetierung als CSV-Datei herunterladen
+  </v-btn>
 </template>
 
 <script>
 import { store } from "@/components/store";
-const deutschesZahlenformat=new Intl.NumberFormat('de-DE', { minimumFractionDigits: 2, maximumFractionDigits: 2 })
+const deutschesZahlenformat = new Intl.NumberFormat("de-DE", {
+  minimumFractionDigits: 2,
+  maximumFractionDigits: 2,
+});
 
 export default {
   methods: {
     downloadAsCSV() {
       const csvString = [
-        ["\"Frage\"", "\"Antwort\"", "\"Kosten\""],
+        ['"Frage"', '"Antwort"', '"Kosten"'],
         ...store.antworten.map((item) => [
           `"${item.titel}"`,
           `"${item.antwort}"`,

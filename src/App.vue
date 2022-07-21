@@ -88,16 +88,13 @@ export default {
           { name: "AfA Software" },
           { name: "Umgelegte Fiduciakosten" },
           { name: "Umgelegte Standortkosten" },
+          { name: "Reise und Bewirtung" },
+          { name: "Weiterbildung" },
         ],
       },
       {
         name: "Personalkosten",
-        children: [
-          { name: "Reise und Bewirtung" },
-          { name: "Weiterbildung" },
-          { name: "Personalanwerbung" },
-          { name: "Löhne & Gehälter" },
-        ],
+        children: [{ name: "Personalanwerbung" }, { name: "Löhne & Gehälter" }],
       },
       {
         name: "Projektkosten",

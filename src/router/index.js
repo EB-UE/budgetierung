@@ -29,7 +29,7 @@ const routes = [
         name: routeNames.DatenverarbeitungUndIt,
         path: 'Datenverarbeitung',
         component: SliderView,
-      },      
+      },
     ]
   },
   {

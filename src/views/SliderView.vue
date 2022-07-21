@@ -5,10 +5,7 @@
         <v-row>
           <v-col cols="6">
             <v-card v-if="fragenpaar[0]" height="100%">
-              <v-card-title
-                >Wie viele Mitarbeitende haben eine Lizenz für
-                {{ fragenpaar[0].titel }}?
-              </v-card-title>
+              <v-card-title> {{ fragenpaar[0].titel }} </v-card-title>
               <v-card-subtitle>
                 Auch Lizenzen die nicht aktiv genutzt werden – aber in den
                 Kosten aufgenommen werden müssen.
@@ -24,10 +21,7 @@
           </v-col>
           <v-col cols="6">
             <v-card v-if="fragenpaar[1]" height="100%">
-              <v-card-title
-                >Wie viele Mitarbeitende haben eine Lizenz für
-                {{ fragenpaar[1].titel }}?
-              </v-card-title>
+              <v-card-title> {{ fragenpaar[1].titel }} </v-card-title>
               <v-card-subtitle>
                 Auch Lizenzen die nicht aktiv genutzt werden – aber in den
                 Kosten aufgenommen werden müssen.
