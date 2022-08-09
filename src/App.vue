@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer app flat clipped>
+    <v-navigation-drawer app flat clipped :width="256 + 128">
       <v-list nav>
         <!-- <v-list-item class="px-2">
         <v-list-item-avatar>
@@ -17,6 +17,11 @@
           <template v-slot:activator>
             <v-list-item-content>
               <v-list-item-title v-text="group.name"></v-list-item-title>
+              <v-progress-linear
+                v-model="group.progress"
+                :buffer-value="bufferValue"
+                color="#5a2873"
+              ></v-progress-linear>
             </v-list-item-content>
           </template>
 
@@ -33,7 +38,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app color="#5a2873" dark>
+    <v-app-bar app color="#5a2873" dark clipped-left>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -44,7 +49,7 @@
           width="40"
         />
 
-        <span>EB – Effiziente Budgetierung</span>
+        <span>EB - Budgetierungsprozess</span>
       </div>
 
       <v-spacer></v-spacer>
@@ -73,6 +78,7 @@ export default {
     navigation: [
       {
         name: "Sachkosten",
+        progress:50,
         children: [
           { name: "Räume und Gebäude" },
           { name: "Geschäftsausstattung" },

@@ -3,7 +3,7 @@
     <v-row justify="text-center">
       <v-col cols="12">
         <span class="text-h5">
-          Willkommen beim <i>Effiziente Budgetierung</i> Prozess. Links in der
+          Willkommen beim <i>EB - Budgetierungsprozess</i>. Links in der
           Navigation sind die Kostenarten aufgelistet.
         </span>
       </v-col>
