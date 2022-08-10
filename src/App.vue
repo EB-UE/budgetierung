@@ -17,11 +17,8 @@
           <template v-slot:activator>
             <v-list-item-content>
               <v-list-item-title v-text="group.name"></v-list-item-title>
-              <v-progress-linear
-                v-model="group.progress"
-                :buffer-value="bufferValue"
-                color="#5a2873"
-              ></v-progress-linear>
+              <v-progress-linear v-model="group.progress" color="#5a2873">
+              </v-progress-linear>
             </v-list-item-content>
           </template>
 
@@ -78,7 +75,7 @@ export default {
     navigation: [
       {
         name: "Sachkosten",
-        progress:50,
+        progress: 50,
         children: [
           { name: "Räume und Gebäude" },
           { name: "Geschäftsausstattung" },
