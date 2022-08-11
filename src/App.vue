@@ -89,7 +89,7 @@ export default {
           { name: "Leasing und Betrieb Kfz" },
           { name: "Marketing und Öffentlichkeitsarbeit" },
           { name: "AfA Software" },
-          { name: "Umgelegte Fiduciakosten" },
+          { name: "Umgelegte Atruviakosten" },
           { name: "Umgelegte Standortkosten" },
           { name: "Reise und Bewirtung" },
           { name: "Weiterbildung" },
