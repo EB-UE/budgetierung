@@ -110,11 +110,6 @@
               </v-card>
             </v-dialog>
           </v-card-title>
-          <v-card-subtitle
-            >In der folgenden Eingabemaske könnt ihr die Externen
-            Beratungskosten und die sonstigen Kosten für das entsprechende
-            Projekt erfassen.
-          </v-card-subtitle>
           <v-card-text>
             <v-data-table
               :headers="beraterHeader"

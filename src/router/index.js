@@ -17,7 +17,8 @@ export const routeNames = {
   DatenverarbeitungUndIt: 'DatenverarbeitungUndIt',
   LaufendesProjekt: 'LaufendesProjekt',
   Projektinitiative: 'Projektinitiative',
-  CSVExport: 'CSVExport'
+  CSVExport: 'CSVExport',
+  laufendesProjektDetail: 'detail',
 }
 
 const routes = [
@@ -48,7 +49,7 @@ const routes = [
         path: 'laufendes-projekt',
         component: LaufendesProjektView,
       }, {
-        name: 'detail',
+        name: routeNames.laufendesProjektDetail,
         path: 'laufendes-projekt/detail',
         component: LaufendesProjektDetailView,
       },

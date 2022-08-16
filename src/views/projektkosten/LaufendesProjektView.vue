@@ -25,6 +25,7 @@
               :items="projekte"
               :search="search"
               :items-per-page="5"
+              @click:row="handleClick"
             >
               <template v-slot:top>
                 <v-text-field
@@ -49,6 +50,8 @@
 </template>
 
 <script>
+import { routeNames } from "@/router/index.js";
+
 export default {
   data() {
     return {
@@ -105,6 +108,11 @@ export default {
         },
       ],
     };
+  },
+  methods: {
+    handleClick() {
+      this.$router.push({ name: routeNames.laufendesProjektDetail });
+    },
   },
 };
 </script>
