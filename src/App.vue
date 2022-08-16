@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-navigation-drawer app flat clipped :width="256 + 128">
+    <v-navigation-drawer app flat clipped permanent :width="256 + 128">
       <v-list nav>
         <!-- <v-list-item class="px-2">
         <v-list-item-avatar>
@@ -17,7 +17,7 @@
           <template v-slot:activator>
             <v-list-item-content>
               <v-list-item-title v-text="group.name"></v-list-item-title>
-              <v-progress-linear v-model="group.progress" color="#5a2873">
+              <v-progress-linear v-model="group.progress" color="primary">
               </v-progress-linear>
             </v-list-item-content>
           </template>
@@ -35,7 +35,7 @@
       </v-list>
     </v-navigation-drawer>
 
-    <v-app-bar app color="#5a2873" dark clipped-left>
+    <v-app-bar app color="primary" dark clipped-left>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -101,7 +101,16 @@ export default {
       },
       {
         name: "Projektkosten",
-        children: [],
+        children: [
+          {
+            name: "Laufende Projekte",
+            to: { name: routeNames.LaufendesProjekt },
+          },
+          {
+            name: "Projektinitiativen",
+            to: { name: routeNames.Projektinitiative },
+          },
+        ],
       },
       {
         name: "Reports",

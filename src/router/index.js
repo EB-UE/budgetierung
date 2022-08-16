@@ -4,6 +4,10 @@ import RouterView from '@/views/RouterView.vue'
 
 import HomeView from "../views/HomeView.vue";
 import SliderView from "../views/SliderView.vue";
+import LaufendesProjektView from '../views/projektkosten/LaufendesProjektView.vue'
+import LaufendesProjektDetailView from '../views/projektkosten/LaufendesProjektDetailView.vue'
+import ProjektinitiativeView from '../views/projektkosten/ProjektinitiativeView.vue'
+
 import CSVExportView from "../views/CSVExportView.vue";
 
 
@@ -11,6 +15,8 @@ Vue.use(VueRouter);
 
 export const routeNames = {
   DatenverarbeitungUndIt: 'DatenverarbeitungUndIt',
+  LaufendesProjekt: 'LaufendesProjekt',
+  Projektinitiative: 'Projektinitiative',
   CSVExport: 'CSVExport'
 }
 
@@ -29,6 +35,27 @@ const routes = [
         name: routeNames.DatenverarbeitungUndIt,
         path: 'Datenverarbeitung',
         component: SliderView,
+      },
+    ]
+  },
+  {
+    name: "projektkosten",
+    path: "/projektkosten",
+    component: RouterView,
+    children: [
+      {
+        name: routeNames.LaufendesProjekt,
+        path: 'laufendes-projekt',
+        component: LaufendesProjektView,
+      }, {
+        name: 'detail',
+        path: 'laufendes-projekt/detail',
+        component: LaufendesProjektDetailView,
+      },
+      {
+        name: routeNames.Projektinitiative,
+        path: 'projektinitiative',
+        component: ProjektinitiativeView,
       },
     ]
   },
