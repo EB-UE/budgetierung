@@ -80,7 +80,8 @@
                         <v-switch
                           v-model="neueBeraterkosten[genehmigung]"
                           label="Genehmigung"
-                          hint="Wurden Aufwände für doese Beratung berets im Rahmen des Projektantrags oder eines separaten Beschlusses genehmigt?"
+                          hint="Wurden Aufwände für diese Beratung berets im Rahmen des Projektantrags oder eines separaten Beschlusses genehmigt?"
+                          persistent-hint
                         ></v-switch>
                       </v-col>
                       <v-col cols="12">
@@ -230,6 +231,7 @@
                           v-model="neueSonstigeKosten[genehmigung]"
                           label="Genehmigung"
                           hint="Wurde die sonst. Kosten bereits im Rahmen des Projektantrags oder eines separaten Beschlusses genehmigt?"
+                          persistent-hint
                         ></v-switch>
                       </v-col>
                       <v-col cols="12">
