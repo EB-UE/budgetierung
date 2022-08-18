@@ -18,7 +18,7 @@
     <v-row>
       <v-col cols="12">
         <v-card>
-          <v-card-title></v-card-title>
+          <v-card-subtitle>Bei einem Klick auf ein Projekt wird die Detailansicht geöffnet.</v-card-subtitle>
           <v-card-text>
             <v-data-table
               :headers="headers"
@@ -63,7 +63,7 @@ export default {
           filterable: true,
           value: "name",
         },
-        { text: "geschätze Gesamtkosten", value: "gesamtkosten" },
+        { text: "Gesamtkosten", value: "gesamtkosten" },
       ],
       projekte: [
         {
