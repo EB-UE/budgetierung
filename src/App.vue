@@ -17,7 +17,7 @@
           <template v-slot:activator>
             <v-list-item-content>
               <v-list-item-title v-text="group.name"></v-list-item-title>
-              <v-progress-linear v-model="group.progress" color="primary">
+              <v-progress-linear :value="group.progress" color="primary">
               </v-progress-linear>
             </v-list-item-content>
           </template>
