@@ -1,0 +1,2 @@
+"use strict";(self["webpackChunkeb_budgetierung"]=self["webpackChunkeb_budgetierung"]||[]).push([[443],{1272:function(u,e,n){n.r(e),n.d(e,{default:function(){return l}});var t=function(){var u=this;u._self._c;return u._m(0)},s=[function(){var u=this,e=u._self._c;return e("div",{staticClass:"about"},[e("h1",[u._v("This is an about page")])])}],r=n(1001),i={},a=(0,r.Z)(i,t,s,!1,null,null,null),l=a.exports}}]);
+//# sourceMappingURL=about.84d3cc40.js.map
