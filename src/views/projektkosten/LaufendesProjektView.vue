@@ -18,7 +18,9 @@
     <v-row>
       <v-col cols="12">
         <v-card>
-          <v-card-subtitle>Bei einem Klick auf ein Projekt wird die Detailansicht geöffnet.</v-card-subtitle>
+          <v-card-subtitle>
+            Bei einem Klick auf ein Projekt wird die Detailansicht geöffnet.
+          </v-card-subtitle>
           <v-card-text>
             <v-data-table
               :headers="headers"
