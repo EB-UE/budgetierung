@@ -518,6 +518,24 @@ export default {
       this.dialogBeratungskosten = false;
     },
   },
+  computed: {
+    watchGeplanteTage: function () {
+      return this.neueBeraterkosten[geplanteTage];
+    },
+    watchTagessatz: function () {
+      return this.neueBeraterkosten[tagessatz];
+    },
+  },
+  watch: {
+    watchGeplanteTage: function (newVal) {
+      this.neueBeraterkosten[summe] =
+        newVal * this.neueBeraterkosten[tagessatz] || null;
+    },
+    watchTagessatz: function (newVal) {
+      this.neueBeraterkosten[summe] =
+        this.neueBeraterkosten[geplanteTage] * newVal || null;
+    },
+  },
 };
 </script>
 
